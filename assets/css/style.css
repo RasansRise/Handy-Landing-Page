@@ -535,6 +535,8 @@ img {
 .menu-logo-wrap {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	flex-grow: 1;
 }
 
 .hamburger-menu-trigger,
@@ -2968,6 +2970,7 @@ img {
 .single-service-box-4 .service-box-text {
 	position: relative;
 	font-size: 14px;
+	text-align: justify;
 }
 
 
