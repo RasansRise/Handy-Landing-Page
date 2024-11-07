@@ -61,10 +61,21 @@
         .sustainability-icons img{
             mix-blend-mode: multiply;
         }
+        .certificates{
+            position: relative;
+        }
+        .certificates .handy-background{
+            background-position: bottom left ;
+            transform: rotate(45deg) translateY(700px) translateX(200px);
+        }
         @media(max-width:1600px){
             .handy-background{
                 background-size: 500px;
                 background-position: center bottom -150px;
+            }
+            .certificates .handy-background{
+                background-position: top left ;
+                transform: rotate(0deg) translateY(0px) translateX(0px);
             }
         }
         @media(max-width:991px){
@@ -257,6 +268,13 @@
     <div class="handy-background"></div>
     <div class="container">
         <div class="row justify-content-between">
+            <div class="col-12 pb-120">
+
+                <h1 class="section-title text-center font-weight-bold" style="color:#e46a5a">Your Premium Hygiene Partner</h4>
+
+                <h1 class="section-title text-center font-weight-bold" >for Everyday Freshness</h1>
+                <p class="text-center">At HANDY, we’ve been redefining hygiene since 1978, bringing you products that make everyday life fresher, easier, and more comfortable. Whether at home or in business, our high-quality products are designed for maximum convenience, offering the perfect balance of strength, softness, and eco-friendly solutions.</p>
+            </div>
             <div class="col-lg-5">
                 <div class="section-heading mb-60 mt-75">
                     <h4 class="sub-title">Our Mission &amp; Vision</h4>
@@ -314,9 +332,68 @@
             <div class="col-lg-4 offset-lg-1">
                 <div class="our-mission-thumb">
                     <div class="mission-thumb-big">
-                        <img src="assets/images/others/about us 2.jpg" class="d-block m-auto">
+                        <img src="assets/images/about/handy.jpg" class="d-block m-auto">
                     </div>
                     
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="service-area service-area-2 service-area-3 pt-100 pb-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="section-heading mb-60">
+                    <h4 class="sub-title">Services</h4>
+                    <h2 class="section-title">Our Departments</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-none-30 text-center">
+            <div class="col-xl-3 col-lg-6 col-md-12 mt-30">
+                <div class="single-service-box">
+                    <div class="icon ">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <div class="content">
+                        <h4 class="title">Certified Quality</h4>
+                        <p>Our products are ISO 9001 & ISO 14001 certified, ensuring the highest standards in both product quality and environmental impact.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12 mt-30">
+                <div class="single-service-box">
+                    <div class="icon ">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+                    <div class="content">
+                        <h4 class="title">Trusted</h4>
+                        <p>Years of experience with advanced technology to deliver top-tier hygiene products.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-12 mt-30">
+                <div class="single-service-box">
+                    <div class="icon ">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div class="content">
+                        <h4 class="title">Eco-Friendly</h4>
+                        <p>We prioritize sustainability, crafting products that are as kind to the planet as they are to you.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xl-3 col-lg-6 col-md-12 mt-30">
+                <div class="single-service-box">
+                    <div class="icon ">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="content">
+                        <h4 class="title">Global Reach</h4>
+                        <p>Exporting to over 10 countries, HANDY products are trusted worldwide.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -387,7 +464,7 @@
             <div class="col-12 mt-30">
                 <div class="single-service-box-4">
                     <div class="thumb">
-                        <img src="assets/images/service/Artboard 3.jpg" alt="" style="max-height: 700px;">
+                        <img src="assets/images/service/Artboard 3.jpg" alt="" >
                         <span class="count">03</span>
                     </div>
                     <div class="content">
@@ -431,7 +508,7 @@
 </section>
 <!-- service area end -->
    
-    <section class="video-area bg_img pt-300 pb-300" data-overlay="94" data-background="assets/images/banner/slider-1.jpg">
+    <section class="video-area bg_img pt-300 pb-300" data-overlay="94" data-background="assets/images/others/handy.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -470,11 +547,11 @@
                 <div class="text-center">
                     <div class="portfolio-filter mb-40">
                         <button class="active" data-filter="*">Show all</button>
-                        <button data-filter=".cat1">Jumbo Rolls</button>
-                        <button data-filter=".cat2">Facial Tissues</button>
-                        <button data-filter=".cat3">Home Care </button>
-                        <button data-filter=".cat4">Toilet Essentials</button>
-                        <button data-filter=".cat5">Wet Wipes</button>
+                        <button data-filter=".jumbo">Jumbo Rolls</button>
+                        <button data-filter=".facial">Facial Tissues</button>
+                        <button data-filter=".home">Home Care </button>
+                        <button data-filter=".toilet">Toilet Essentials</button>
+                        <button data-filter=".wipes">Wet Wipes</button>
                     </div>
                 </div>
             </div>
@@ -482,110 +559,456 @@
         </div>
         <div id="portfolio-grid" class="row row-portfolio">
             <div class="col-lg-3 col-md-6 grid-sizer"></div>
-            <div class="col-lg-3 col-md-6 grid-item cat2">
+            <div class="col-lg-3 col-md-6 grid-item facial">
                 <div class="portfolio-item mb-30">
                     <div class="portfolio-wrapper">
                         <div class="portfolio-image">
-                            <img src="assets/images/products/Artboard1.jpg" alt="" />
+                            <img src="assets/images/products/facial tissues/1-Facial Tissues 120T.jpg" alt="" />
                             <div class="view-icon">
-                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/Artboard1.jpg">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/facial%20tissues/1-Facial%20Tissues%20120T.jpg">
                                     <i class="fas fa-plus"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="portfolio-caption">
-                            <!-- <h4>Awesome Doctor</h4>
-                            <p>Medical</p> -->
+                            <h4>Facial Tissues 120T</h4>
+                            <p>Facial Tissues</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 grid-item cat2">
+            <div class="col-lg-3 col-md-6 grid-item facial">
                 <div class="portfolio-item mb-30">
                     <div class="portfolio-wrapper">
                         <div class="portfolio-image">
-                            <img src="assets/images/products/Artboard2.jpg" alt="" />
+                            <img src="assets/images/products/facial tissues/2-Facial Tissues 120T.jpg" alt="" />
                             <div class="view-icon">
-                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/Artboard2.jpg">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/facial%20tissues/2-Facial%20Tissues%20120T.jpg">
                                     <i class="fas fa-plus"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="portfolio-caption">
-                            <!-- <h4>Awesome Doctor</h4>
-                            <p>Medical</p> -->
+                            <h4>Facial Tissues 120T</h4>
+                            <p>Facial Tissues</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 grid-item cat3">
+            <div class="col-lg-3 col-md-6 grid-item facial">
                 <div class="portfolio-item mb-30">
                     <div class="portfolio-wrapper">
                         <div class="portfolio-image">
-                            <img src="assets/images/products/Artboard3.jpg" alt="" />
+                            <img src="assets/images/products/facial tissues/3-Facial Tissues 120T.jpg" alt="" />
                             <div class="view-icon">
-                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/Artboard3.jpg">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/facial%20tissues/3-Facial%20Tissues%20120T.jpg">
                                     <i class="fas fa-plus"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="portfolio-caption">
-                            <!-- <h4>Awesome Doctor</h4>
-                            <p>Medical</p> -->
+                            <h4>Facial Tissues 120T</h4>
+                            <p>Facial Tissues</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 grid-item cat4">
+            <div class="col-lg-3 col-md-6 grid-item facial">
                 <div class="portfolio-item mb-30">
                     <div class="portfolio-wrapper">
                         <div class="portfolio-image">
-                            <img src="assets/images/products/Artboard4.jpg" alt="" />
+                            <img src="assets/images/products/facial tissues/1-Facial Tissues 250T.jpg" alt="" />
                             <div class="view-icon">
-                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/Artboard4.jpg">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/facial%20tissues/1-Facial%20Tissues%20250T.jpg">
                                     <i class="fas fa-plus"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="portfolio-caption">
-                            <!-- <h4>Awesome Doctor</h4>
-                            <p>Medical</p> -->
+                            <h4>Facial Tissues 250T</h4>
+                            <p>Facial Tissues</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 grid-item cat3">
+            <div class="col-lg-3 col-md-6 grid-item facial">
                 <div class="portfolio-item mb-30">
                     <div class="portfolio-wrapper">
                         <div class="portfolio-image">
-                            <img src="assets/images/products/Artboard5.jpg" alt="" />
+                            <img src="assets/images/products/facial tissues/2-Facial Tissues 250T.jpg" alt="" />
                             <div class="view-icon">
-                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/Artboard5.jpg">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/facial%20tissues/2-Facial%20Tissues%20250T.jpg">
                                     <i class="fas fa-plus"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="portfolio-caption">
-                            <!-- <h4>Awesome Doctor</h4>
-                            <p>Medical</p> -->
+                            <h4>Facial Tissues 250T</h4>
+                            <p>Facial Tissues</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 grid-item cat5">
+            <div class="col-lg-3 col-md-6 grid-item facial">
                 <div class="portfolio-item mb-30">
                     <div class="portfolio-wrapper">
                         <div class="portfolio-image">
-                            <img src="assets/images/products/Artboard6.jpg" alt="" />
+                            <img src="assets/images/products/facial tissues/1-Facial Tissues 400Tjpg.jpg" alt="" />
                             <div class="view-icon">
-                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/Artboard5.jpg">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/facial%20tissues/1-Facial%20Tissues%20400Tjpg.jpg">
                                     <i class="fas fa-plus"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="portfolio-caption">
-                            <!-- <h4>Awesome Doctor</h4>
-                            <p>Medical</p> -->
+                            <h4>Facial Tissues 400T</h4>
+                            <p>Facial Tissues</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 grid-item facial">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/facial tissues/2-Facial Tissues 400T.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/facial%20tissues/2-Facial%20Tissues%20400T.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Facial Tissues 400T</h4>
+                            <p>Facial Tissues</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 grid-item facial">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/facial tissues/1-Pocket Hand.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/facial%20tissues/1-Pocket%20Hand.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Pocket Hand</h4>
+                            <p>Facial Tissues</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="col-lg-3 col-md-6 grid-item facial">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/facial tissues/2-Pocket Hand.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/facial%20tissues/2-Pocket%20Hand.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Pocket Hand</h4>
+                            <p>Facial Tissues</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-lg-3 col-md-6 grid-item facial">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/facial tissues/Facial Tissues 550T.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/facial%20tissues/Facial%20Tissues%20550T.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Facial Tissues 550T</h4>
+                            <p>Facial Tissues</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 grid-item facial">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/facial tissues/2-Facial Tissues 550T.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/facial%20tissues/2-Facial%20Tissues%20550T.jpg ">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Facial Tissues 550T</h4>
+                            <p>Facial Tissues</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 grid-item home">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/home care/Jumbo Roll.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/home%20care/Jumbo%20Roll.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Jumbo Roll</h4>
+                            <p>Home Care</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 grid-item home">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/home care/Kitchen Ultra Roll.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/home%20care/Kitchen%20Ultra%20Roll.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Kitchen Ultra Roll</h4>
+                            <p>Home Care</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 grid-item home">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/home care/Mega Roll.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/home%20care/Mega%20Roll.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Mega Roll</h4>
+                            <p>Home Care</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 grid-item toilet">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/toilet/Toilet Paper 2 Rolls.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/toilet/Toilet%20Paper%202%20Rolls.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Toilet Paper 2 Rolls</h4>
+                            <p>Toilet Tissues</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 grid-item toilet">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/toilet/Toilet Paper 2 Rolls Compressed.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/toilet/Toilet%20Paper%202%20Rolls%20Compressed.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Toilet Paper 2 Rolls Compressed</h4>
+                            <p>Toilet Tissues</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 grid-item toilet">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/toilet/Toilet Paper 2+1 Rolls Compressed.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/toilet/Toilet%20Paper%202+1%20Rolls%20Compressed.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Toilet Paper 2+1 Rolls Compressed</h4>
+                            <p>Toilet Tissues</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 grid-item toilet">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/toilet/Toilet Paper 5+1 Rolls Compressed.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/toilet/Toilet%20Paper%205+1%20Rolls%20Compressed.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Toilet Paper 5+1 Rolls Compressed</h4>
+                            <p>Toilet Tissues</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 grid-item wipes">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/wet wipes/1-Anti Bacterial Wet Wipes 40Pcs.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/wet%20wipes/1-Anti%20Bacterial%20Wet%20Wipes%2040Pcs.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Anti Bacterial Wet Wipes 40Pcs</h4>
+                            <p>Wet Wipes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 grid-item wipes">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/wet wipes/2-Anti Bacterial Wet Wipes 40Pcs.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/wet%20wipes/2-Anti%20Bacterial%20Wet%20Wipes%2040Pcs.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Anti Bacterial Wet Wipes 40Pcs</h4>
+                            <p>Wet Wipes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 grid-item wipes">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/wet wipes/1-Baby Wipes 20Pcs.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/wet%20wipes/1-Baby%20Wipes%2020Pcs.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Baby Wipes 20Pcs</h4>
+                            <p>Wet Wipes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 grid-item wipes">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/wet wipes/1-Baby Wipes 72Pcs.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/wet%20wipes/1-Baby%20Wipes%2072Pcs.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Baby Wipes 72Pcs</h4>
+                            <p>Wet Wipes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 grid-item wipes">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/wet wipes/1-Refereshing Wet Wipes 120Pcs.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/wet%20wipes/1-Refereshing%20Wet%20Wipes%20120Pcs.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Refereshing Wet Wipes 120Pcs</h4>
+                            <p>Wet Wipes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 grid-item wipes">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/wet wipes/1-Refereshing Wet Wipes 40Pcs.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/wet%20wipes/1-Refereshing%20Wet%20Wipes%2040Pcs.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Refereshing Wet Wipes 40Pcs</h4>
+                            <p>Wet Wipes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 grid-item wipes">
+                <div class="portfolio-item mb-30">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="assets/images/products/wet wipes/Makeup Removal Wipes.jpg" alt="" />
+                            <div class="view-icon">
+                                <a class="popup-image" data-rel="lightcase:myCollection" href="assets/images/products/wet%20wipes/Makeup%20Removal%20Wipes.jpg">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-caption">
+                            <h4>Makeup Removal Wipes</h4>
+                            <p>Wet Wipes</p>
                         </div>
                     </div>
                 </div>
@@ -791,6 +1214,8 @@
 </section>
 <!-- / END PORTFOLIO DESIGN AREA -->
 <section class="certificates pt-120 pb-120">
+    <div class="handy-background"></div>
+
     <div class="container">
         <div class="row justify-content-center">
 
@@ -829,6 +1254,27 @@
             
         </div>
     </div>
+</section>
+
+<section class="video-area join-us bg_img pt-300 pb-300" data-overlay="94" data-background="assets/images/banner/slider-4.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="video-content text-center">
+                
+                    <div class="section-heading">
+                        <h2 class="section-title" style="color:#043747">Join the HANDY Familyand Experience the Difference 
+                        </h2>
+                        
+                    </div>
+                    <div class="content text-white" style="font-size:30px; line-height: 1.3;" >
+                        <p>We’re dedicated to providing you with high-quality hygiene products that meet your everyday needs while caring for the environment. Join the thousands of customers who trust HANDY for their hygiene solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </section>
 <section class="contact-info-area pt-130 pb-130" id="contact">
     <div class="container">

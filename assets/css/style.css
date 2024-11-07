@@ -1925,11 +1925,7 @@ img {
 }
 
 .video-area::before {
-	background: linear-gradient(
-		90deg,
-		rgba(252, 24, 83, 1) 0%,
-		rgba(252, 86, 83, 1) 100%
-	);
+	background: #e46a5a;
 	z-index: -1;
 }
 
@@ -1946,11 +1942,11 @@ img {
 }
 
 .video-area::before {
-	background: linear-gradient(
-		90deg,
-		rgba(252, 24, 83, 1) 0%,
-		rgba(252, 86, 83, 1) 100%
-	);
+	background: rgb(228 106 90 / 30%);
+	z-index: -1;
+}
+.video-area.join-us::before {
+	background: rgb(228 106 90 / 40%);
 	z-index: -1;
 }
 
@@ -2754,8 +2750,8 @@ img {
 	transition: all 0.3s;
 	border-image: linear-gradient(
 		45deg,
-		#09216d 0%,
-		#09216d 100%
+		#e46a5a 0%,
+		#e46a5a 100%
 	);
 	border-image-slice: 1;
 }
@@ -2776,6 +2772,7 @@ img {
 .single-service-box .icon {
 	position: relative;
 	padding-bottom: 40px;
+	font-size: 40px;
 }
 
 .single-service-box .icon::after {
@@ -2786,7 +2783,7 @@ img {
 	transform: translateX(-50%);
 	position: absolute;
 	width: 60px;
-	background: #09216d;
+	background: #e46a5a;
 }
 
 /* service-3 css */
