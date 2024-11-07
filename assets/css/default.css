@@ -641,6 +641,9 @@
 .pt-200 {
 	padding-top: 200px;
 }
+.pt-300{
+	padding-top:300px;
+}
 /*-- Padding Bottom --*/
 
 .pb-5 {
@@ -762,6 +765,9 @@
 }
 .pb-200 {
 	padding-bottom: 200px;
+}
+.pb-300 {
+	padding-bottom: 300px;
 }
 
 /*-- Padding left --*/
@@ -956,7 +962,7 @@
 	opacity: 0.75;
 }
 [data-overlay="8"]::before {
-	opacity: 0.8;
+	opacity: 0.3;
 }
 [data-overlay="85"]::before {
 	opacity: 0.85;

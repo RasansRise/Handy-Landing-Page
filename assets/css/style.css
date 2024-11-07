@@ -912,11 +912,11 @@ img {
 }
 
 .hero-slider {
-	height: 950px;
+	height: 1080px;
 }
 
 .hero-slider .single-slide-item {
-	min-height: 950px;
+	min-height: 1080px;
 }
 
 .single-slide-item {
@@ -1023,7 +1023,7 @@ img {
 	position: relative;
 }
 
-.single-slide-item::after {
+/* .single-slide-item::after {
 	background-image: url(../images/ilustration/banner-shape.png);
 	bottom: 0;
 	content: "";
@@ -1034,7 +1034,7 @@ img {
 	position: absolute;
 	z-index: 1;
 	background-repeat: no-repeat;
-}
+} */
 
 /* hero slider 2 css */
 .single-hero-slide {
@@ -2802,6 +2802,9 @@ img {
 }
 
 /* service-area-4 css */
+.service-area-4{
+	background-color: aliceblue;
+}
 .single-service-box-4 .thumb {
 	position: relative;
 }
@@ -2830,6 +2833,7 @@ img {
 }
 
 .single-service-box-4 .content {
+	background-color: white;
 	padding: 40px;
 	box-shadow: 0px 8px 16px 0px rgba(41, 166, 204, 0.06);
 	padding-top: 36px;
