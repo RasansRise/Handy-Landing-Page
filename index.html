@@ -52,10 +52,28 @@
             background-position: bottom -250px right -100px;
             opacity: 0.5;
             z-index: -1;
-            background-size: 40%;
+            background-size: 1000px;
         }
         #sustainability{
             background-color: #ebebeb;
+        }
+        @media(max-width:1600px){
+            .handy-background{
+                background-size: 500px;
+                background-position: center bottom -150px;
+            }
+        }
+        @media(max-width:991px){
+            .handy-background{
+                background-position: right bottom -150px;
+            }
+        }
+        @media(max-width:500px){
+            .handy-background{
+                background-size: 90%;
+                background-position: right bottom -100px;
+
+            }
         }
     </style>
 </head>
