@@ -1946,7 +1946,7 @@ img {
 	z-index: -1;
 }
 .video-area.join-us::before {
-	background: rgb(228 106 90 / 40%);
+	background: rgb(0 0 0 / 40%);
 	z-index: -1;
 }
 
