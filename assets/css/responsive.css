@@ -815,7 +815,7 @@
 	.site-header-2 a.meanmenu-reveal span,
 	.site-header-3 a.meanmenu-reveal span {
 		
-		background: #a8b7e5;
+		background: white;
 		width: 30px;
 	}
 
@@ -823,8 +823,8 @@
 	.site-header-2 a.meanmenu-reveal,
 	.site-header-3 a.meanmenu-reveal {
 		margin-top: -62px;
-		border-color: #a8b7e5;
-		background: #a8b7e5;
+		border-color: white;
+		background: white;
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
