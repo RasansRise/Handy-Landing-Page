@@ -1949,7 +1949,9 @@ img {
 	background: rgb(0 0 0 / 40%);
 	z-index: -1;
 }
-
+.video-area.join-us{
+	background-position: center left;
+}
 .video-content {
 	padding: 0 30px;
 }
