@@ -908,11 +908,11 @@ img {
 }
 
 .hero-slider {
-	height: 1080px;
+	height: 100vh;
 }
 
 .hero-slider .single-slide-item {
-	min-height: 1080px;
+	min-height: 100vh;
 }
 
 .single-slide-item {
@@ -939,7 +939,7 @@ img {
 }
 
 .single-slide-content .title {
-	font-size: 140px;
+	font-size: 100px;
 	color: #fff;
 	font-weight: 700;
 }
